@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Web Store</title>
+  <script src="formChecker.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+  <font size="36pt"><center>Web Store</center></font>
+</head>
+<body>
+  <form name="store" id="store" action="customerBackEnd.php" onsubmit="return validateForm();" method="post">
+    User Name:&nbsp <input type="email" id="user" name="user"><br><br>
+    Password:&nbsp <input type="password" id="pass" name="pass"><br><br>
+    Choose Item:<br>
+    Item 1 ($1) Qty:&nbsp<input type="number" name="item1" id="item1" value=0><br>
+    Item 2 ($2) Qty:&nbsp<input type="number" name="item2" id="item2" value=0><br>
+    Item 3 ($3) Qty:&nbsp<input type="number" name="item3" id="item3" value=0><br><br>
+    Choose Shipping:<br>
+    <input type="radio" name="ship" value="Free">Free 7 Day<br>
+    <input type="radio" name="ship" value="Overnight">$50 Overnight<br>
+    <input type="radio" name="ship" value="Three Day">$5 Three Day<br>
+    <br><br>
+    <button type="reset" value="Reset">Reset</button>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
